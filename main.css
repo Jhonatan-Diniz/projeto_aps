@@ -26,7 +26,6 @@ header {
 .header-left h1 {
     font-size: 20px;
     margin: 0;
-    transition: show 0.8s;
 }
 
 .header-right a {
@@ -90,7 +89,13 @@ section {
 
 .sobre-item-inner h3{
   text-align: center;
-  font-size: 2em
+  font-size: 2em;
+}
+
+.sobre-item-inner p{
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .sobre-item-inner {
@@ -156,62 +161,77 @@ section {
 
 .ajude-content{
     background-color: #015450;
-    padding: 20px;
-    color:white
+    height: 100%;
+    padding: 40px;
+    color:white;
 }
 
 #ajude {
   font-size: 2em;
-  overflow: hidden
-}
-
-.ajude-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0.2em 0.2em 20px black;
-  position: relative;
-  z-index: 10;
+  overflow: hidden;
 }
 
 .ajude-content h3 {
   font-size: 2em;
+  text-align: center;
 }
 
-#btn_ajude {
-  font-size: 1em;
-  background-color: rgb(0, 0, 0, 0);
-  border: none;
-  border-radius: 200px;
-  color: white;
-  margin-right: 0.2em;
-  padding: 30px;
-  transition: 0.4s;
+.ajude-content h4 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
-#btn_ajude:hover{
-  cursor: pointer;
-  background-color:rgb(1, 54, 50, 0.5);
+.ong-item-inner h3{
+  text-align: center;
+  font-size: 2em
 }
 
-#ongs-list {
-  display: none;
-  height: 100%;
+.ong-item-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2% 0 2%;
+}
+
+.ong-item-inner img {
+  box-shadow: 0.2em 0.2em 20px black;
   width: 90%;
   margin: auto;
-  background-color: rgb(0,106,78);
-  animation: show 0.1s;
-  position: relative;
-  z-index: -10;
-  margin-top: -10px;
-  padding: 1.2em;
-  padding-top: 2em;
-  border-radius: 0 0 20px 20px;
+  transform: scale(0.98);
+  transition: 0.5s
 }
 
-footer {
-    background-color: #015450;
-    color: #F4F5F4;
-    text-align: center;
-    padding: 20px;
+.ong-item-inner img:hover {
+  transform: scale(1);
+  filter: opacity(95%);
+  filter: grayscale(20%);
+  filter: blur(3px);
+  cursor: pointer
+}
+
+.ong-link{
+  font-size: 40px;
+  color: #F4F5F4;
+  margin: 20px;
+}
+
+.ong-link:hover{
+  color: #c3f3c3;
+}
+
+.ong-descricao{
+  text-align: justify;
+  font-size: 30px;
+  margin: 10px 10px;
+}
+
+.img-ong{
+  margin: auto;
+  margin-left: 20px;
+}
+
+.texto-rodape{
+  color: #015450;
+  text-align: center;
+  margin-bottom: 20px;
 }
